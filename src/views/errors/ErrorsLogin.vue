@@ -21,7 +21,6 @@ export default defineComponent({
   },
   setup() {
     const errorMessage = useErrorMessageStore()
-    console.log(errorMessage.getMsg);
     return {
       errorMessage
     }

@@ -21,7 +21,6 @@ export default defineComponent({
         localStorage.clear()
         tokenStore.setToken({} as ITokenStore)
       } else {
-        console.log('s');
         tokenStore.setToken(JSON.parse(tempTokenStorage))
         router.push('/private')
       }
